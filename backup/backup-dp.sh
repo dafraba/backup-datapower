@@ -1,23 +1,23 @@
 #!/bin/bash
-echo "Guardando cambios en datapower de desarrollo";
+echo "Guardando cambios en datapower de {{nombre_appliance}}";
 #llamamos al bash para guardar cambios
-bash ~/Documents/scripts-dp/save-changes/save-changes.sh;
+bash ~/Documents/scripts-for-dp/save-changes/save-changes.sh;
 
 #llamamos al bash que genera el export en datapower
 echo "Generando export de todos los dominios en datapower dominio default ";
-bash ~/Documents/scripts-dp/export/generate-backup.sh;
+bash ~/Documents/scripts-for-dp/export/generate-appliance-backup.sh;
 
 #descargamos el export en nuestra máquina local
 echo "descargando el achivo export.zip de generado en datapower"
-bash ~/Documents/scripts-dp/export/obtiene-export.sh;
+bash ~/Documents/scripts-for-dp/export/download-appliance-backup.sh;
 
 #generamos los directorios correspondientes
 echo "se generan los directorios correspondientes"
-bash ~/Documents/scripts-dp/export/genera-directorios.sh;
+bash ~/Documents/scripts-for-dp/export/generate-directories.sh;
 
 #limpiamos la información miscélanea generada
 echo "limpiando la información y generando el archivo en el repositorio especificado"
-bash ~/Documents/scripts-dp/export/generate-backup-file.sh;
+bash ~/Documents/scripts-for-dp/export/publish-backup.sh;
 
 #finalizamos nuestro script
-echo "ir a ~/Documents/scripts-dp/backup/respaldo-dp1 e ingresar a la carpeta para verificar el archivo descargado"
+echo "ir a ~/Documents/scripts-for-dp/backup/respaldo-generado/{{timestamp}}/export.zip e ingresar a la carpeta para verificar el archivo descargado"
