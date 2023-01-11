@@ -1,6 +1,7 @@
 #!/bin/bash
+
+#with this sentences it prints a message and after that it executes the script save-changes.sh
 echo "Guardando cambios en datapower de {{nombre_appliance}}";
-#llamamos al bash para guardar cambios
 bash ~/Documents/scripts-for-dp/save-changes/save-changes.sh;
 
 #llamamos al bash que genera el export en datapower
