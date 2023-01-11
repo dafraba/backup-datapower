@@ -1,24 +1,24 @@
 #!/bin/bash
 
 #with this sentences it prints a message and after that it executes the script save-changes.sh
-echo "Guardando cambios en datapower de {{nombre_appliance}}";
+echo "Saving changes at datapower {{insert_your_appliance_name}}";
 bash ~/Documents/scripts-for-dp/save-changes/save-changes.sh;
 
-#llamamos al bash que genera el export en datapower
-echo "Generando export de todos los dominios en datapower dominio default ";
+#prints a message, after that it executes the next bash
+echo "Generating export file from all domins at {{insert_your_appliance_name}} in default domian";
 bash ~/Documents/scripts-for-dp/export/generate-appliance-backup.sh;
 
-#descargamos el export en nuestra máquina local
-echo "descargando el achivo export.zip de generado en datapower"
+#download the export.zip file from default domain to the selected subdirectory
+echo "download export.zip from {{insert_your_appliance_name}}"
 bash ~/Documents/scripts-for-dp/export/download-appliance-backup.sh;
 
-#generamos los directorios correspondientes
-echo "se generan los directorios correspondientes"
+#with this action, we generate destination files for your export.zip
+echo "Generating destination folders"
 bash ~/Documents/scripts-for-dp/export/generate-directories.sh;
 
-#limpiamos la información miscélanea generada
-echo "limpiando la información y generando el archivo en el repositorio especificado"
+#sending export.zip to the folder destination 
+echo "sending your export.zip to the specified directory"
 bash ~/Documents/scripts-for-dp/export/publish-backup.sh;
 
-#finalizamos nuestro script
-echo "ir a ~/Documents/scripts-for-dp/backup/respaldo-generado/{{timestamp}}/export.zip e ingresar a la carpeta para verificar el archivo descargado"
+#bash finished
+echo "Go to ~/Documents/scripts-for-dp/backup/respaldo-generado/{{timestamp}}/{{file_name}}.zip for see your {{file_name}}.zip file"
