@@ -15,5 +15,10 @@ tail -c +2 response64.txt > archivob64.txt;
 sed 's/.$//' archivob64.txt > output.txt;
 #se hace la decodificación del archivo output.txt para obtener el archivo xml de configuración
 base64 -d output.txt > export.zip;
-#se eliminan todos los archivos gerados, excepto el xml final
+
+
+
+
+
+#we clean up our space for those files we do not need
 rm -f response.json response64.txt archivob64.txt output.txt;
