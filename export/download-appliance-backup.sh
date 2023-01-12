@@ -20,12 +20,5 @@ sed 's/.$//' archivob64.txt > output.txt;
 #this sentece decodes the content of the file output.txt and generating the zip file required
 base64 -d output.txt > export.zip;
 
-<<<<<<< HEAD
-
-
-
-
-=======
->>>>>>> english-version
 #we clean up our space for those files we do not need
 rm -f response.json response64.txt archivob64.txt output.txt;
