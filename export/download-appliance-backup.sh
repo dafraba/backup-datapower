@@ -17,7 +17,7 @@ tail -c +2 response64.txt > archivob64.txt;
 #we open the file archivob64.txt and then deletes the last character ("") and generates another file named output.txt
 sed 's/.$//' archivob64.txt > output.txt;
 
-#this sentece decodes the content of the file output.txt and generating the zip file required
+#this sentece decodes the content of the file output.txt and generating the zip file required. You can change file name export for whatever you want but you need to keep in mind to move in the publish-backup.sh bash.
 base64 -d output.txt > export.zip;
 
 #we clean up our space for those files we do not need
