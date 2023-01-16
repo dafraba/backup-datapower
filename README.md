@@ -1,4 +1,4 @@
-This set of scripts can be used for saving changes, generating export, downloading generated .zip file and creating a local repository with timestamp at your linux devices.
+This set of scripts can be used for saving changes, generating export, downloading generated .zip file and creating a local repository with timestamp at your datapower devices.
 
 Prequesities:
 Rest mgmt at port 5554 in datapower;
