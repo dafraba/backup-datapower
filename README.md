@@ -9,3 +9,4 @@ Access level: Privileged
 Password: "Prueba123."
 Soma request: The package includes this request.
 Linux OS native or virtual box.
+when you clone this project, you need to be at ~/Documents/
