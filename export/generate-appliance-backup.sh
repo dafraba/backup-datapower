@@ -1,6 +1,6 @@
 #!/bin/bash
 #you have to specify config.sh source path
-source ~/Documents/scripts-for-dp/config.sh
+source ~/Documents/backup-datapower/config.sh
 
 #this sentence sends an xml request via http post to datapower xml management interface for executing backup for all domains and generates an export.zip in default domain 
 echo "backing up your {{insert_your_appliance_name}}";

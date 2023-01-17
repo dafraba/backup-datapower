@@ -1,6 +1,6 @@
 #!/bin/bash
 #you have to specify config.sh source path
-source ~/Documents/scripts-for-dp/config.sh
+source ~/Documents/backup-datapower/config.sh
 
 #this sentence install jq (json processor for linux), if it is already install, bash continues to the next sentence without any changes, if not, press "y" when it asks
 sudo apt-get install jq;
