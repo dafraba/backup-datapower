@@ -1,12 +1,14 @@
-This set of scripts can be used for saving changes, generating export, downloading generated .zip file and creating a local repository with timestamp at your datapower devices.
+#BACKUP IN DATAPOWER VIA REST API
 
-Prequesities:
-Rest mgmt at port 5554 in datapower;
-XML Mgmt at port 55550 in datapower;
-IP address:
-User accont: "scripts" 
-Access level: Privileged
-Password: "Prueba123."
-Soma request: The package includes this request.
-Linux OS native or virtual box.
-when you clone this project, you need to be at ~/Documents/
+#### ### ## This set of scripts can be used for saving changes, generating export, downloading generated .zip file and creating a local repository with timestamp at your datapower devices.
+
+##### Prerequisites:
+- Rest mgmt at port 5554 in datapower.
+- XML Mgmt at port 55550 in datapower.
+- IP address:
+- User accont: "scripts".
+- Access level: Privileged.
+- Password: "Prueba123."
+- Soma request: The package includes this request.
+- Linux OS native or virtual box.
+- Your home directory must be ~/Documents/
